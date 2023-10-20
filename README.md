@@ -11,11 +11,14 @@ A few resources to get you started if this is your first Flutter project:
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 ## Features
+- Riverpood : Riverpod makes working with asynchronous code.
+
+- Clean Architecture : In this tutorial, we're combine clean archi with DDD.
+
 - Hive: Learn how to set up, read, write, and manage a local Hive database within a Flutter application.
 
-- Dependency Injection (DI): Discover how dependency injection can be implemented to manage service instances, enhancing code modularity and testability.
 
-- Unit Testing: Ensure your code is robust and reliable with unit tests, demonstrating best practices in testing database interactions and business logic.
+
 
 
 
