@@ -8,25 +8,21 @@ part 'trip_model.g.dart';
 @HiveType(typeId: 0)
 class TripModel {
   @HiveField(0)
-  final String id;
-
-  @HiveField(1)
   final String title;
 
-  @HiveField(2)
+  @HiveField(1)
   final List<String> photos;
 
-  @HiveField(3)
+  @HiveField(2)
   final String description;
 
-  @HiveField(4)
+  @HiveField(3)
   final DateTime date;
 
-  @HiveField(5)
+  @HiveField(4)
   final String location;
 
   TripModel({
-    required this.id,
     required this.title,
     required this.photos,
     required this.description,
@@ -36,7 +32,6 @@ class TripModel {
 
   // Conversion from Entity to Model
   factory TripModel.fromEntity(Trip trip) => TripModel(
-      id: trip.id,
       title: trip.title,
       photos: trip.photos,
       description: trip.description,
@@ -46,7 +41,6 @@ class TripModel {
 
   // Conversion from Model to Entity
   Trip toEntity() => Trip(
-      id: id,
       title: title,
       photos: photos,
       description: description,

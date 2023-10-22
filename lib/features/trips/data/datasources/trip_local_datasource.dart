@@ -12,11 +12,11 @@ class TripLocalDataSource {
   }
 
   void addTrip(TripModel trip) {
-    tripBox.put(trip.id, trip);
+    tripBox.add(trip);
   }
 
-  void deleteTrip(int id) {
-    tripBox.delete(id);
+  void deleteTrip(int index) {
+    tripBox.deleteAt(index);
   }
 
 }
