@@ -11,7 +11,6 @@ class MyTripsScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     //ref.read(tripListNotifierProvider.notifier).loadTrips();
     final tripList = ref.watch(tripListNotifierProvider);
-    print("tripList : ${tripList.length}");
 
     return SingleChildScrollView(
       physics: const ScrollPhysics(),
